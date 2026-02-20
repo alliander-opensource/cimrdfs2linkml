@@ -16,6 +16,7 @@ click = "^8.1.7"
 
 [tool.poetry.group.dev.dependencies]
 black = "^24"
+pytest = "^9.0.2"
 
 
 [tool.poetry.scripts]

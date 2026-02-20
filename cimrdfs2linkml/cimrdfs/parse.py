@@ -181,7 +181,7 @@ def _bind_enum_values_to_enums(enums, enum_values):
 
 def _parse_profile_as_dict(prof_fp, namespaces):
     prof = xmltodict.parse(
-        prof_fp.read_text(),
+        prof_fp.read_text(encoding="utf-8"),
         process_namespaces=True,
         namespaces=namespaces,
         attr_prefix="@",
